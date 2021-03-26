@@ -54,6 +54,7 @@ td{
     margin: 5px 5px;
     font-size: 25px;
     padding: 0;
+    outline: none;
     border-color: black;
     border-radius: 8px;
     height: 60px;
