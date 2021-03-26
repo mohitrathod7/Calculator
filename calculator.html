@@ -4,33 +4,13 @@
     <meta charset="UTF-8">
     <title>Calculator</title>
     <link rel="stylesheet" type="text/css" href="calculator.css">
-    <script>
-        function insert(num){
-            document.form.textview.value = document.form.textview.value+num;
-        }
-
-        function equal(){
-            var exp = document.form.textview.value;
-            if(exp){
-                document.form.textview.value = eval(exp);
-                }
-        }
-
-        function clearall(){
-            document.form.textview.value = ""
-        }
-
-        function back(){
-            var exp = document.form.textview.value;
-            document.form.textview.value = exp.substring(0,exp.length-1);
-        }
-    </script>
 </head>
 <body>
     <div class="main">
         <form name="form" class="form">
-            <input class="textview" name="textview">
+            <input class="textview" name="textview" autocomplete="off">
         </form>
+
         <table>
             <tr>
                 <td><input class="button" type="button" id="all_clear" value="AC" onclick="clearall()"></td>
@@ -43,7 +23,7 @@
                 <td><input class="button" type="button" value="7" onclick="insert(7)"></td>
                 <td><input class="button" type="button" value="8" onclick="insert(8)"></td>
                 <td><input class="button" type="button" value="9" onclick="insert(9)"></td>
-                <td><input class="button" type="button" value="x" onclick="insert('x')"></td>
+                <td><input class="button" type="button" value="x" onclick="insert('*')"></td>
             </tr>
 
             <tr>
@@ -67,5 +47,27 @@
             </tr>
         </table>
     </div>
+
+    <script>
+        function insert(num){
+            document.form.textview.value = document.form.textview.value+num;
+        }
+
+        function equal(){
+            var exp = document.form.textview.value;
+            if(exp){
+                document.form.textview.value = eval(exp);
+                }
+        }
+
+        function clearall(){
+            document.form.textview.value = ""
+        }
+
+        function back(){
+            var exp = document.form.textview.value;
+            document.form.textview.value = exp.substring(0,exp.length-1);
+        }
+    </script>
 </body>
 </html>

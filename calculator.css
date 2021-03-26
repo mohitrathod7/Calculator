@@ -18,7 +18,7 @@ body
     left: 50%;
     height: 400px;
     width: 250px;
-    transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%) scale(1.25);
     padding: 5px 5px;
     border: 1px solid black;
     background: #ccc;
@@ -28,12 +28,12 @@ body
 
 .button
 {
-    width: 50px;
     height: 50px;
-    font-size: 25px;
+    width: 50px;
     background: #f2f2f2;
-    cursor: pointer;
+    font-size: 25px;
     outline: none;
+    cursor: pointer;
     border-radius: 8px;
     border: 0.5px solid black;
     transition: 0.3s ease-in-out;
@@ -50,14 +50,14 @@ td{
 
 .textview
 {
-    width: 235px;
     margin: 5px 5px;
+    padding: 0 10px;
+    height: 60px;
+    width: -webkit-fill-available;
     font-size: 25px;
-    padding: 0;
     outline: none;
     border-color: black;
     border-radius: 8px;
-    height: 60px;
 }
 
 .textview:hover
@@ -66,9 +66,9 @@ td{
 }
 
 table{
-     width: 250px;
-     height: 330px;
-     margin-left: 5px;
+    width: 250px;
+    height: 330px;
+    margin-left: 5px;
 }
 
 #all_clear, #clear
@@ -79,19 +79,20 @@ table{
 
 #equal
 {
-    font-weight: bold;
     color: white;
     font-size: 40px;
+    font-weight: bold;
 }
 
 .equal_button
 {
-    background: #ff6103;
-    width: 116px;
+    margin-left: 1.5px;
     height: 50px;
+    width: 116px;
+    background: #ff6103;
+    outline: none;
     border-radius: 9px;
     border: 0.5px solid #222;
-    margin-left: 1.5px;
     cursor: pointer;
 }
 
